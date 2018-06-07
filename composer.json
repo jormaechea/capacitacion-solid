@@ -1,0 +1,11 @@
+{
+    "name": "jormaechea/capacitacion-solid",
+    "description": "Capacitación sobre principios SOLID",
+    "authors": [
+        {
+            "name": "Joaquín Ormaechea",
+            "email": "joaquin@fizzmod.com"
+        }
+    ],
+    "require": {}
+}
