@@ -10,8 +10,14 @@
 	stopOnFailure="false"
 	syntaxCheck="false">
 	<testsuites>
-		<testsuite name="L_Messages">
+		<testsuite name="L_Messages_Wrong">
 			<directory suffix=".php">./src/L/Messages/Wrong/Tests/</directory>
+		</testsuite>
+		<testsuite name="D_Company_Wrong">
+			<directory suffix=".php">./src/D/Company/Wrong/Tests/</directory>
+		</testsuite>
+		<testsuite name="D_Company_Right">
+			<directory suffix=".php">./src/D/Company/Right/Tests/</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>
