@@ -8,10 +8,23 @@
         }
     ],
     "autoload": {
-        "psr-4": {"Solid\\": "src/"}
+        "psr-4": {
+            "Solid\\": "src/"
+        }
     },
     "require": {},
     "require-dev": {
         "phpunit/phpunit": "^5.7"
+    },
+    "scripts": {
+        "s-book-wrong": "php src/S/Book/Wrong/index.php",
+        "s-book-right": "php src/S/Book/Right/index.php",
+        "o-shapes-wrong": "php src/O/Shapes/Wrong/index.php",
+        "o-shapes-right": "php src/O/Shapes/Right/index.php",
+        "l-shapes-wrong": "php src/L/Shapes/Wrong/index.php",
+        "l-shapes-right": "php src/L/Shapes/Right/index.php",
+        "l-messages-wrong": "./vendor/bin/phpunit src/L/Messages/Wrong/Tests",
+        "d-company-wrong": "./vendor/bin/phpunit src/D/Company/Wrong/Tests",
+        "d-company-right": "./vendor/bin/phpunit src/D/Company/Right/Tests"
     }
 }
