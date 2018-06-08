@@ -1,4 +1,4 @@
-# Open/Close Principle
+# Open/Closed Principle (OCP)
 
 ## Concepto
 

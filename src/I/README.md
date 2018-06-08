@@ -1,4 +1,4 @@
-# Principio de Segregación de Interfaces
+# Interface Segregation Principle (ISP)
 
 ## Concepto
 

@@ -1,4 +1,4 @@
-# Principio de Sustitución de Liskov
+# Liskov Substitution Principle (LSB)
 
 ## Concepto
 

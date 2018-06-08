@@ -1,4 +1,4 @@
-# Principio de Inversión de Dependencias
+# Dependency Inversion Principle (ISP)
 
 ## Concepto
 

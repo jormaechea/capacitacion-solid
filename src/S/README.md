@@ -1,4 +1,4 @@
-# Single Responsability
+# Single Responsability Principle (SRP)
 
 ## Concepto
 
