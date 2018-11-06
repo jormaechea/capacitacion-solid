@@ -2,7 +2,7 @@
 
 namespace Solid\O\Shapes\Right;
 
-require("../../../../vendor/autoload.php");
+require(__DIR__. "/../../../../vendor/autoload.php");
 
 $square = new Square(10);
 

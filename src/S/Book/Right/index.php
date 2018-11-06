@@ -2,7 +2,7 @@
 
 namespace Solid\S\Book\Right;
 
-require("../../../../vendor/autoload.php");
+require(__DIR__. "/../../../../vendor/autoload.php");
 
 $author = new Author("John", "Doe");
 

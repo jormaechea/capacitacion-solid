@@ -2,7 +2,7 @@
 
 namespace Solid\S\Book\Wrong;
 
-require("../../../../vendor/autoload.php");
+require(__DIR__. "/../../../../vendor/autoload.php");
 
 $book = new Book("/path/to/the/book.ebook", "The best book", "John", "Doe");
 

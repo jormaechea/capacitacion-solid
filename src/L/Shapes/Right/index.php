@@ -2,7 +2,7 @@
 
 namespace Solid\L\Shapes\Right;
 
-require("../../../../vendor/autoload.php");
+require(__DIR__. "/../../../../vendor/autoload.php");
 
 $areaCalculator = new AreaCalculator();
 

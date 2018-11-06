@@ -2,7 +2,7 @@
 
 namespace Solid\O\Shapes\Wrong;
 
-require("../../../../vendor/autoload.php");
+require(__DIR__. "/../../../../vendor/autoload.php");
 
 echo "Calculator V1\n\n";
 
