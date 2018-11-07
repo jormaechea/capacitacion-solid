@@ -10,6 +10,10 @@ const browserSync = require("browser-sync").create();
 
 const directories = getDirectories('.');
 
+const argumentsString = process.argv.slice(2).join(' ');
+
+const shouldWatch = argumentsString.includes("-w");
+
 async function start () {
 	const answers = await inquirer.prompt([{
 		type: 'list',
@@ -24,21 +28,25 @@ async function start () {
 	const slidesFileDist = join(slidesFolder, 'index.html');
 
 	compileSlides({ slidesFile, slidesFileDist, slidesFolder });
+
+	if(shouldWatch) {
+
 	watch(slidesFile, () => compileSlides({ slidesFile, slidesFileDist, slidesFolder }));
 
-	browserSync.init({
-		server: {
-			baseDir: join(__dirname, slidesFolder),
-			index: `index.html`
-		},
-		serveStatic: [{
-	        route: '/slides-src',
-	        dir: join(__dirname, 'slides-src/')
-	    }]
-	});
+		browserSync.init({
+			server: {
+				baseDir: join(__dirname, slidesFolder),
+				index: `index.html`
+			},
+			serveStatic: [{
+		        route: '/slides-src',
+		        dir: join(__dirname, 'slides-src/')
+		    }]
+		});
 
-	browserSync.reload('*.html');
-	browserSync.watch(slidesFileDist).on('change', browserSync.reload);
+		browserSync.reload('*.html');
+		browserSync.watch(slidesFileDist).on('change', browserSync.reload);
+	}
 }
 
 function compileSlides({ slidesFile, slidesFileDist, slidesFolder }) {

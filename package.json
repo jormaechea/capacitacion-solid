@@ -4,7 +4,9 @@
   "description": "Capacitación SOLID",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "build": "node .",
+    "start": "node . -w",
+    "predeploy": "node ."
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/jormaechea/capacitacion-solid/issues"
   },
-  "homepage": "https://github.com/jormaechea/capacitacion-solid#readme",
+  "homepage": "https://jormaechea.github.io/capacitacion-solid/",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
