@@ -7,6 +7,8 @@ block variables
 
 mixin svg(name)
 	img(src=`images/${name}.svg` style={ width: '20%', background: 'none', border: 'none', 'box-shadow': 'none' })&attributes(attributes)
+mixin svgSmall(name)
+	img(src=`images/${name}.svg` style={ width: '5%', background: 'none', border: 'none', 'box-shadow': 'none' })&attributes(attributes)
 mixin img(name)
 	img(src=`images/${name}`)&attributes(attributes)
 mixin code(language)
