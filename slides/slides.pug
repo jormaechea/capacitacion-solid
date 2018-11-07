@@ -23,11 +23,11 @@ block slides
 	section
 		h2 Los 5 principios SOLID son:
 		ul
-			li Single Responsability Principle (SRP)
-			li Open/Closed Principle (OCP)
-			li Liskov Substitution Principle (LSP)
-			li Interface Segregation Principle (ISP)
-			li Dependency Inversion Principle (ISP)
+			li.fragment Single Responsability Principle (SRP)
+			li.fragment Open/Closed Principle (OCP)
+			li.fragment Liskov Substitution Principle (LSP)
+			li.fragment Interface Segregation Principle (ISP)
+			li.fragment Dependency Inversion Principle (ISP)
 	section
 		h2
 		p
@@ -88,9 +88,9 @@ block slides
 	section
 		h3 Interface Segregation Principle (ISP)
 		q Una clase no debe ser obligada a implementar una interfaz que no utilice.
-		p
+		p.fragment
 			small Este principio básicamente hace que uno se asegure de no implementar métodos que no hagan nada, solo para cumplir con una interfaz.
-		p
+		p.fragment
 			small En caso de tener una interfaz que obligue a quienes la implementan, a declarar métodos que no tienen sentido, es una clara señal de que la interfaz debe ser separada en más interfaces pequeñas.
 
 	section
@@ -101,9 +101,9 @@ block slides
 	section
 		h3 Dependency Inversion Principle (DIP)
 		q Una clase debe no debe depender de una implementación, sino de una abstracción.
-		p
+		p.fragment
 			small Este principio incentiva a no depender, por ejemplo, de un motor de base de datos, sino de una interfaz de interacción con el motor que se implemente en un momento dado.
-		p
+		p.fragment
 			small Si bien un sistema (alto nivel) depende de una DB, no puede depender de una implementación de MySQL (bajo nivel), sino que debe depender, por ejemplo, de un conector de bases de datos (alto nivel).
 
 	section
