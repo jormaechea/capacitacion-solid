@@ -21,7 +21,7 @@ async function start () {
 	const { coursePath: slidesFolder } = answers;
 
 	const slidesFile = join(__dirname, slidesFolder, 'slides.pug');
-	const slidesFileDist = join('.', 'docs', 'index.html');
+	const slidesFileDist = join(slidesFolder, 'index.html');
 
 	compileSlides({ slidesFile, slidesFileDist, slidesFolder });
 	watch(slidesFile, () => compileSlides({ slidesFile, slidesFileDist, slidesFolder }));
