@@ -1,0 +1,127 @@
+extends ./base.pug
+block variables
+	- title = 'Capacitación React - Primera Parte'
+	- theme = 'moon'
+
+block slides
+
+	section
+		h1 Principios SOLID
+		p
+			br
+			small - Joaquín Ormaechea -
+			br
+			small(style="font-size:0.4em;") - Fizzmod 2018 -
+			br
+			+svgSmall('logo-fizzmod')
+
+	section
+		h2 Qué son los principios SOLID?
+		p.fragment SOLID son las iniciales de 5 principios de diseño de OOP
+		p.fragment La idea principal es conseguir software fácil de entender, refactorizar, extender y mantener.
+
+	section
+		h2 Los 5 principios SOLID son:
+		ul
+			li.fragment Single Responsability Principle (SRP)
+			li.fragment Open/Closed Principle (OCP)
+			li.fragment Liskov Substitution Principle (LSP)
+			li.fragment Interface Segregation Principle (ISP)
+			li.fragment Dependency Inversion Principle (ISP)
+	section
+		h2
+		p
+			+img('ya-comete-la-maldita-naranja.jpg')
+	section
+		h3 Single Responsability Principle (SRP)
+		q Una clase debe tener una y solo una responsabilidad y por lo tanto solo un motivo para cambiar
+		p.fragment
+			+img('navaja-suiza.jpg')
+		p.fragment
+			small Sí, esa es una foto de Order.php
+
+	section
+		p [Demo SRP]
+		p
+			+svg('coding')
+
+	section
+		h3 Open/Closed Principle (OCP)
+		q Una clase debe ser abierta para la extensión, pero cerrada para su modificación.
+		p.fragment
+			small La idea básica es que una clase debe poder ser extendida, pero sin necesitar modificar la clase misma.
+		p.fragment
+			small Esto viene muy ligado a interfaces, y cómo una clase debe estar preparada para interactuar con todo aquel que implemente esa interfaz, y no con un conjunto limitado de clases.
+		p.fragment
+			small De este principio depende la extensibilidad de un sistema.
+
+	section
+		p [Demo OCP]
+		p
+			+svg('coding')
+
+	section
+		h3 Liskov Substitution Principle (LSP)
+		q Una clase que hereda de otra debe ser intercambiable por la clase padre
+		p.fragment.fade-in
+			+img('wat.png')
+
+	section
+		h3 Liskov Substitution Principle (LSP)
+		q Una clase que hereda de otra debe ser intercambiable por la clase padre
+		p
+			small
+				span Algo muy importante que dice este principio
+				span(style="color: #5e5e5e")  (aunque no lo diga de manera muy clara)
+				span , es que al extender una clase todos los métodos que se sobreescriben deben ser compatibles tanto en los tipos de datos que reciben como en los tipos de datos que devuelven.
+		div.fragment
+			hr
+			p
+				small IMPORTANTE: Esto asegura que al intercambiar, todo funcione a nivel sistema, no a nivel lógica de negocio. Las clases no deben tener la misma lógica, sino la misma interfaz (entrada y salida)
+			hr
+
+	section
+		p [Demo LSP]
+		p
+			+svg('coding')
+
+	section
+		h3 Interface Segregation Principle (ISP)
+		q Una clase no debe ser obligada a implementar una interfaz que no utilice.
+		p.fragment
+			small Este principio básicamente hace que uno se asegure de no implementar métodos que no hagan nada, solo para cumplir con una interfaz.
+		p.fragment
+			small En caso de tener una interfaz que obligue a quienes la implementan, a declarar métodos que no tienen sentido, es una clara señal de que la interfaz debe ser separada en más interfaces pequeñas.
+
+	section
+		p [Demo ISP]
+		p
+			+svg('coding')
+
+	section
+		h3 Dependency Inversion Principle (DIP)
+		q Una clase debe no debe depender de una implementación, sino de una abstracción.
+		p.fragment
+			small Este principio incentiva a no depender, por ejemplo, de un motor de base de datos, sino de una interfaz de interacción con el motor que se implemente en un momento dado.
+		p.fragment
+			small Si bien un sistema (alto nivel) depende de una DB, no puede depender de una implementación de MySQL (bajo nivel), sino que debe depender, por ejemplo, de un conector de bases de datos (alto nivel).
+
+	section
+		p [Demo DIP]
+		p
+			+svg('coding')
+
+	section
+		h1 Preguntas?
+		p
+			+svg('think')
+
+	section
+		h1 Gracias
+		p
+			br
+			small - Joaquín Ormaechea -
+			br
+			small(style="font-size:0.4em;") - Fizzmod 2018 -
+			br
+			+svgSmall('logo-fizzmod')
