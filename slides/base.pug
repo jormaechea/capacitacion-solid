@@ -1,0 +1,48 @@
+-
+	var revealFolder = './reveal/'
+	var title = 'Capacitación'
+	var theme = 'league'
+	var favicon = ''
+block variables
+
+mixin svg(name)
+	img(src=`images/${name}.svg` style={ width: '20%', background: 'none', border: 'none', 'box-shadow': 'none' })&attributes(attributes)
+mixin img(name)
+	img(src=`images/${name}`)&attributes(attributes)
+mixin code(language)
+	pre&attributes(attributes)
+		code(data-trim, class=language)
+			block
+mixin codeFragment(language)
+	pre.fragment
+		code(data-trim, class=language)
+			block
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title= title
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="stylesheet" href=`${revealFolder}css/reveal.css`)
+		link(rel="stylesheet" href=`${revealFolder}css/theme/${theme}.css`)
+		link(href=favicon rel="shortcut icon" type="image/x-icon")
+
+		link(rel="stylesheet" href=`${revealFolder}lib/css/zenburn.css`)
+		block head
+	body
+		.reveal
+			.slides
+				block slides
+
+
+		script(src=`${revealFolder}lib/js/head.min.js`)
+		script(src=`${revealFolder}js/reveal.js`)
+		script.
+			Reveal.initialize({
+				history: true,
+				transition: "none",
+				dependencies: [
+					{ src: '#{revealFolder}plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});

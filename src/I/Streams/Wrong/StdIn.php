@@ -9,7 +9,7 @@ class StdIn implements IStreamManager {
 	}
 
 	public function write($data) {
-		// You cannot read stdIn
+		// You cannot write stdIn
 	}
 
 }

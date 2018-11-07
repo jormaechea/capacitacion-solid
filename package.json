@@ -1,0 +1,27 @@
+{
+  "name": "capacitacion-solid",
+  "version": "1.0.0",
+  "description": "Capacitación SOLID",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jormaechea@github.com/jormaechea/capacitacion-solid.git"
+  },
+  "author": "Joaquín Ormaechea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jormaechea/capacitacion-solid/issues"
+  },
+  "homepage": "https://github.com/jormaechea/capacitacion-solid#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "inquirer": "^6.2.0",
+    "pug": "^2.0.3"
+  }
+}

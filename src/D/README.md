@@ -1,4 +1,4 @@
-# Dependency Inversion Principle (ISP)
+# Dependency Inversion Principle (DIP)
 
 ## Concepto
 

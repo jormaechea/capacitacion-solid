@@ -5,6 +5,7 @@ namespace Solid\L\Message\Wrong\Tests;
 use \PHPUnit\Framework\TestCase;
 
 use \Solid\L\Messages\Wrong\SimpleMessageStorage;
+use \Solid\L\Messages\Wrong\SingleMessageStorage;
 
 class MessageStorageTest extends TestCase {
 

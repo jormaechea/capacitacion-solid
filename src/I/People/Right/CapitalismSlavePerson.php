@@ -2,7 +2,7 @@
 
 namespace Solid\I\People\Right;
 
-class NormalPerson implements IPerson, IEmployed {
+class CapitalismSlavePerson implements IPerson, ICapitalismSlave {
 
 	private $name;
 	private $hungry = false;

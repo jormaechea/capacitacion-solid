@@ -2,7 +2,7 @@
 
 namespace Solid\I\People\Right;
 
-interface IEmployed {
+interface ICapitalismSlave {
 
 	public function work();
 
